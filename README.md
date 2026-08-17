@@ -1,0 +1,2 @@
+# Active-Directory-Domain-Services-AD-DS-Promotion-on-Windows-Server-2025-AWS-EC2-
+This technical documentation provides a comprehensive step-by-step walkthrough of provisioning an AWS EC2 instance running Microsoft Windows Server 2025 Datacenter, configuring static networking and DNS settings, installing Active Directory Domain Services (AD DS) role, and promoting the server to a Primary Domain Controller (DC) for DemoAD.Local2

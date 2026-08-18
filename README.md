@@ -39,7 +39,7 @@ This repository serves as a practical lab reference for cloud engineers, systems
 2. Navigate to the **EC2 Console** under Cloud Compute Services.
 3. Click **Launch Instance** to initiate VM setup.
 
-![AWS EC2 Console Navigation](./Screenshot%202026-08-16%20202701.jpg)
+![AWS EC2 Console Navigation](./Screenshot%202026-08-16%20202701.png)
 *Figure 1: Accessing the EC2 service menu within the AWS Console.*
 
 ---
@@ -53,7 +53,7 @@ This repository serves as a practical lab reference for cloud engineers, systems
 5. In **Network Settings**, ensure the instance is assigned to the target VPC/Subnet with an auto-assigned public IP or elastic IP for remote administration.
 6. Click **Launch Instance**.
 
-![AWS Instance Setup](./Screenshot%202026-08-16%20220315.jpg)
+![AWS Instance Setup](./Screenshot%202026-08-16%20220315.png)
 *Figure 2: Configuring the EC2 instance named `DemoActiveDirectory` with Windows Server 2025.*
 
 ---
@@ -80,7 +80,7 @@ Once connected via Remote Desktop Protocol (RDP):
    - **Alternate DNS server:** `172.31.16.1` *(AWS VPC DNS Resolver)*
 5. Click **OK** to save the TCP/IPv4 properties.
 
-![Network Properties Setup](./Screenshot%202026-08-16%20220809.jpg)
+![Network Properties Setup](./Screenshot%202026-08-16%20220809.png)
 *Figure 4: Assigning static IPv4 address and configuring local preferred DNS bindings.*
 
 ---
@@ -90,7 +90,7 @@ Once connected via Remote Desktop Protocol (RDP):
 1. Open **Server Manager** dashboard.
 2. Click **Add roles and features**.
 
-![Server Manager Dashboard](./Screenshot%202026-08-16%20220836.jpg)
+![Server Manager Dashboard](./Screenshot%202026-08-16%20220836.png)
 *Figure 5: Launching the Add Roles and Features Wizard from Server Manager.*
 
 3. Advance through the wizard:
@@ -100,7 +100,7 @@ Once connected via Remote Desktop Protocol (RDP):
 4. A pop-up dialog will prompt to add required features including **Remote Server Administration Tools (RSAT)** (Group Policy Management, AD DS Tools, PowerShell Module). Click **Add Features**.
 5. Click **Next** through Features and AD DS summary screens, then click **Install**.
 
-![Add Roles and Features Popup](./Screenshot%202026-08-16%20220912.jpg)
+![Add Roles and Features Popup](./Screenshot%202026-08-16%20220912.png)
 *Figure 6: Confirming installation of required RSAT tools and AD DS binaries.*
 
 ---
@@ -109,7 +109,7 @@ Once connected via Remote Desktop Protocol (RDP):
 
 1. Once the role installation completes, click the **Promote this server to a domain controller** link on the wizard results page (or click the flag notification banner in Server Manager).
 
-![Promote Server to Domain Controller](./Screenshot%202026-08-16%20220949.jpg)
+![Promote Server to Domain Controller](./Screenshot%202026-08-16%20220949.png)
 *Figure 7: Initiation link for the Active Directory Domain Services Configuration Wizard.*
 
 2. In the **Active Directory Domain Services Configuration Wizard**:
@@ -134,7 +134,7 @@ Once connected via Remote Desktop Protocol (RDP):
    - **Operating System Version:** `Microsoft Windows Server 2025 Datacenter`
    - **Hardware/VM Profile:** `Amazon EC2 t3.micro`
 
-![Local Server Verification](./Screenshot%202026-08-16%20221107.jpg)
+![Local Server Verification](./Screenshot%202026-08-16%20221107.png)
 *Figure 8: Server Manager properties confirming successful domain promotion to `DemoAD.Local2` on Windows Server 2025.*
 
 ---
